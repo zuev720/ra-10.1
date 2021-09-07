@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ServiceApp {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#serviceFilter {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c4c4c5;
+}
+
+.ServiceAdd {
+  margin-top: 30px;
+}
+
+.ServiceAddInput {
+  border: 1px solid #c4c4c5;
+  padding: 10px;
+}
+
+.ServiceAddInput:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.ServiceAddButton {
+  border: 1px solid #c4c4c5;
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.ServiceList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 1px solid #c4c4c5;
+}
+
+.ServiceList:last-child {
+  border-bottom: none;
+}
+
+.ServiceWrapperValue {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.ServiceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #c4c4c5;
+  padding: 10px;
+}
+
+.ServiceButton {
+  border: 1px solid #c4c4c5;
+  padding: 5px 7px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
